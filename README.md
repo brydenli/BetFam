@@ -1,2 +1,10 @@
-# BetFam
-A mobile app scaffold generated with Bolt, built using Expo and React Native. It's designed for groups of friends or family to track friendly wagers, view active and historical bets, and see who's leading on the leaderboard.
+## ⚡️ Generated with Bolt
+
+This project was generated using [Bolt](https://bolt.new), an AI tool that scaffolds full-stack applications. The initial structure and components were AI-generated, and I’m customizing it from there to fit my vision for a friendly group betting app.
+
+
+The app lets users:
+- Create or join groups with friends/family
+- Place and track bets (in dollar amounts)
+- View active bets and bet history
+- See group leaderboards based on net winnings
