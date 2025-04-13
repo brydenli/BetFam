@@ -150,7 +150,7 @@ CREATE POLICY "Group members can create bets"
   WITH CHECK (
     EXISTS (
       SELECT 1 FROM group_members
-      WHERE group_id = NEW.group_id
+      WHERE group_id = bets.group_id
       AND user_id = auth.uid()
     )
   );
@@ -192,7 +192,7 @@ CREATE POLICY "Bet creators can create outcomes"
   WITH CHECK (
     EXISTS (
       SELECT 1 FROM bets
-      WHERE id = NEW.bet_id
+      WHERE id = bet_outcomes.bet_id
       AND created_by = auth.uid()
     )
   );
